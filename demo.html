@@ -1,0 +1,56 @@
+<div id="D1">
+    Hello Student
+</div>
+<hr>
+<input type="button" value="Alert inline" onclick="alert('Hello guys')"/>
+<input type="button" value="Confirm inline" onclick="alert('Are you sure')"/>
+<input type="button" value="Prompt inline" onclick="alert('Enter firstname here...')"/>
+<hr>
+<input type="button" value="Alert interal" onclick="DemoInternalAlert()"/>&nbsp;
+<input type="button" value="Confirm internal" onclick="DemoInternalConfirm()"/>&nbsp;
+<input type="button" value="Prompt internal" onclick="DemoInternalPrompt()"/>&nbsp;
+<hr>
+<input type="button" value="Alert external" onclick="DemoExternalAlert()"/>&nbsp;
+<input type="button" value="Confirm external" onclick="DemoExternalConfirm()"/>&nbsp;
+<input type="button" value="Prompt external" onclick="DemoExternalPrompt()"/>&nbsp;
+<hr>
+<input type="button" value="Body By Green" onclick="BodyBGGreen()"/>&nbsp;
+<input type="button" value="Body By Gray" onclick="BodyBGGrsy()"/>&nbsp;
+<hr>
+<input type="button" value="Body BG Prompt" onclick="BodyBGDynamic()"/>&nbsp;
+<input type="button" value="Body BG Prompt" onclick="BodyBGDynamic()"/>&nbsp;
+<hr>
+<script type="text/javascript">
+    function DemoInternalAlert(){
+        alert("Internal Alert")
+    }
+    function DemoInternalConfirm(){
+        if(confirm("Are you sure...??")){
+        }else{
+            alert("NOOOO")
+        }
+    }
+    function DemoInternalPrompt(){
+        var fname=prompt("Enter Firstname here....");
+        var fname=prompt("Enter Firstname here....");
+        alert(fname + " " +lname);
+    }
+    function BodyBGGreen(){
+        document.body.style.backgroundColor="Green";
+    }
+    function divBGGray(){
+        document.getElementById("D1").style.backgroundColor="Gray";
+    }
+    function divBGDynamic(){
+        document.getElementById("D1").style.backgroundColor=prompt;
+    }
+    function divBGDynamic(){
+        document.body.style.backgroundColor=prompt("Enter color name here...");
+    }
+    function divBGCP1(){
+        document.body.style.backgroundColor=document.getElementById("CP1").value;
+    }
+    function divBGCP2(){
+        document.getElementById.style.backgroundColor=document.getElementById("CP2").value;
+    }
+</script>
